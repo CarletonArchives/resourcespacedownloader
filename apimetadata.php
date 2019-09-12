@@ -1,6 +1,6 @@
 <?php // Set the private API key for the user (from the user account page) and the user we're accessing the system as.
-$private_key="1b802d76e2eef4f0d49ad319448b0d32885870c5ab1f622e9404de9b282eb007";
-$user="nwilson..LDAP";
+$private_key="";
+$user="..LDAP";
 
 // Search term. EDIT THIS AS NEEDED
 $search=$argv[1];//"zabin";//"date:2014";
