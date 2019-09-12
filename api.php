@@ -141,13 +141,15 @@ foreach($response as $resource){
 	copy($filepath,$writefile);
 	
 //Write to file
+	fwrite($metacsv,'"');
 	foreach($meta_metadata as $writedata){
 
 		if(array_key_exists($ref,$writedata)){
 			fwrite($metacsv,$writedata[$ref]);
 		}
-		fwrite($metacsv,",");
+		fwrite($metacsv,'","');
 	}
+	fwrite($metacsv,'"');
 	fwrite($metacsv,"\n");
 	
     $i++;
