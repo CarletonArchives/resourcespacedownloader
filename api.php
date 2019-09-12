@@ -1,6 +1,7 @@
 <?php // Set the private API key for the user (from the user account page) and the user we're accessing the system as.
+// For Carleton the user value is username of someone with the proper permissions, plus ..LDAP
 $private_key="";
-$user="..LDAP";
+$user="";
 
 // Search term. EDIT THIS AS NEEDED
 $search=$argv[1];//"zabin";//"date:2014";
