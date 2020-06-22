@@ -6,6 +6,8 @@ The api is pretty bare bones, which is fine. However, it might result in some co
 Specific issues:
 The example code should work, although check that the username is correct. Our username had ..LDAP at the end.
 PHP couldn't download the files off of an https link. Switching to http fixed this
+Montala's servers can not handle downloads that are too big. Do them in chunks/month. 
+Metadata only can also be downloaded by using the apimetadata.php file.
 
 General notes:
 On the server, the folder structure is based on the id of the item (stored as ref). Each folder is a digit of the id.
@@ -26,4 +28,5 @@ Notes from Montala about the process:
 
 So use: connect to the server, navigate to the place where you would like the files to live, currently /var/www/html/archon/files/publicaitonsphotos/. Add the apimetadata.php to that location and run it with a search parameter. 
 
-Examples of searches: 'php apimetadata.php "date:2018-05"' would download any file with a date containing 2018-05.
+Examples of searches: 'php api.php "date:2018-05"' would download any files with a date containing 2018-05.
+'php apimetadata.php "date:2018-05"' would download any metadata for files with a date containing 2018-05.
