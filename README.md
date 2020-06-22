@@ -23,3 +23,7 @@ Documentation on the API here: https://www.resourcespace.com/knowledge-base/api/
 Notes from Montala about the process: 
 -The API works by making calls to specific URLs in order to get data back from your ResourceSpace installation. A good starting point will be to use the new API Test Tool included in ResourceSpace. If you navigate to Admin menu -> System -> API test tool you can test the various API functions available. I would start with the do_search function, you will only need to input the first parameter, the search term. 
 -When you click Submit you will see the response that ResourceSpace will return, and below this you will see the PHP code required to run this. You don't have to use PHP but it is a good place to start to see how the query is hashed and interpreted. 
+
+So use: connect to the server, navigate to the place where you would like the files to live, currently /var/www/html/archon/files/publicaitonsphotos/. Add the apimetadata.php to that location and run it with a search parameter. 
+
+Examples of searches: 'php apimetadata.php "date:2018-05"' would download any file with a date containing 2018-05.
