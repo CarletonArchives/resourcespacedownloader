@@ -1,6 +1,9 @@
 # resourcespacedownloader
 Batch downloader for files and metadata in resourcespace.  Downloads files based on search criteria and associated metadata.  This script is nessesary to make large downloads because currently can only download a few 100 via the website.
 
+api.php downloader for files and associated metadata
+apimetadata.php for metadata only
+
 The api is pretty bare bones, which is fine. However, it might result in some collating on your end.
 
 Specific issues:
